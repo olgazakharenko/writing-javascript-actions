@@ -14,4 +14,4 @@
            first-greeting: "First user"
 
        - name: joke
-         uses: ./.github/joke-action
+         uses: ./.github/actions/joke-action
