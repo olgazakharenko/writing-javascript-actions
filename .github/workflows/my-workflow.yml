@@ -14,6 +14,7 @@
            first-greeting: "First user"
 
        - name: jokes
+         id: jokes
          uses: ./.github/actions/joke-action
 
        - name: create issue
