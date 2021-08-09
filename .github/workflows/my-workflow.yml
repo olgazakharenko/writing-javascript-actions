@@ -13,5 +13,12 @@
          with:
            first-greeting: "First user"
 
-       - name: joke
+       - name: jokes
+         id: jokes
          uses: ./.github/actions/joke-action
+
+       - name: create issue
+         uses: ./.github/actions/issue-maker
+         with:
+           repo-token: ${{secrets.GITHUB_TOKEN}}
+           joke: ${{steps.jokes.outputs.joke-output}}
